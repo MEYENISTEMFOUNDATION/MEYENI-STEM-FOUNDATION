@@ -6,82 +6,52 @@
     <title>Meyeni STEM Foundation</title>
     <link rel="stylesheet" href="styles.css"> <!-- Optional: for styling -->
     <style>
-        /* General Styling */
+        /* Additional CSS to ensure uniform image sizes */
+        #team img, #events img {
+            width: 200px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+        /* Mobile-friendly styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
-        header {
-            text-align: center;
-            padding: 10px;
-            background-color: #f4f4f4;
-        }
-        header img {
-            max-width: 150px;
-            height: auto;
-        }
         nav ul {
-            list-style: none;
             display: flex;
-            justify-content: center;
-            gap: 20px;
-            background-color: #007BFF;
-            padding: 10px;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
             margin: 0;
+            background-color: #333;
+        }
+        nav ul li {
+            flex: 1 1 auto;
+            text-align: center;
         }
         nav ul li a {
-            text-decoration: none;
             color: white;
-            font-weight: bold;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+        nav ul li a:hover {
+            background-color: #575757;
         }
         section {
             padding: 20px;
         }
         footer {
             text-align: center;
+            padding: 10px;
             background-color: #333;
             color: white;
-            padding: 10px;
-        }
-        /* Team Section Styling */
-        #team {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            text-align: center;
-        }
-        #team img {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
-        /* Events Section */
-        #events div {
-            margin-bottom: 20px;
-        }
-        #events img {
-            width: 100px;
-            height: auto;
-            object-fit: cover;
-            border: 1px solid #ddd;
-        }
-        /* Mobile Responsiveness */
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-            }
-            #events img {
-                width: 80px;
-            }
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="https://raw.githubusercontent.com/MEYENISTEMFOUNDATION/MEYENI-STEM-FOUNDATION/main/new_images/MSF%20LOGO.jpeg" alt="MSF LOGO">
+        <img src="https://raw.githubusercontent.com/MEYENISTEMFOUNDATION/MEYENI-STEM-FOUNDATION/blob/main/new_images/MSF%20LOGO.jpeg" alt="MSF LOGO">
     </header>
     <!-- Navigation Bar -->
     <nav>
@@ -118,10 +88,13 @@
     <!-- Initiatives Section -->
     <section id="initiatives">
         <h2>Our Initiatives</h2>
+        <p>We are committed to promoting STEM education for girls across Ghana and the African continent through our focused initiatives:</p>
+        <!-- Initiative 1 -->
         <div>
             <h3>Savannah for STEM (S4S)</h3>
             <p>This initiative is focused on promoting STEM education for girls in the northern parts of Ghana. Our aim is to inspire and empower young girls in underrepresented regions to pursue careers in STEM.</p>
         </div>
+        <!-- Initiative 2 -->
         <div>
             <h3>STEM She Can</h3>
             <p>Targeted at girls in the southern parts of Ghana, this initiative provides mentorship, resources, and workshops to encourage and support their STEM education journey.</p>
@@ -131,7 +104,7 @@
     <section id="team">
         <h2>Meet Our Team</h2>
         <div>
-            <img src="https://raw.githubusercontent.com/MEYENISTEMFOUNDATION/MEYENI-STEM-FOUNDATION/main/new_images/MADDY.jpg" alt="MAGDALENE MEYENI-FOUNDER">
+            <img src="https://raw.githubusercontent.com/MEYENISTEMFOUNDATION/MEYENI-STEM-FOUNDATION/1850b4ed41970a40e6f63a956f45c491317fdf47/new_images/new_MADDY.jpg" alt="MAGDALENE MEYENI-FOUNDER">
             <p>MAGDALENE MEYENI-FOUNDER</p>
         </div>
         <div>
